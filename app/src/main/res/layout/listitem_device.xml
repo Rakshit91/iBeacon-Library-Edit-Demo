@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:padding="3dp">
+
+    <TextView
+        android:id="@+id/txt_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:text="Name"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/txt_name_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toRightOf="@+id/txt_name"
+        android:text=" : iBeacon"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/txt_mac"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/txt_name"
+        android:text="MAC"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/txt_mac_value"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txt_name"
+        android:layout_toRightOf="@+id/txt_name"
+        android:text=" : AA:BB:CC:DD:EE"
+        android:textSize="15sp"/>
+
+    <TextView
+        android:id="@+id/txt_rssi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:text="RSSI : -64"/>
+
+</RelativeLayout>
